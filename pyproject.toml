@@ -1,0 +1,19 @@
+[project]
+name = "typed-decision"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Neo Lee", email = "neo.lee@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "laya-mlx[demo]>=0.1.0",
+]
+
+[project.scripts]
+typed-decision = "typed_decision.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
